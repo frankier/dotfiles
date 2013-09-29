@@ -1,0 +1,14 @@
+set guifont=Inconsolata\-dz\ for\ Powerline\ 10
+if has('gui_running')
+    set background=light
+else
+    " Setting to light when the terminal is also configured to light will
+    " cause problems
+    set background=dark
+endif
+" Default solarized settings please!
+let g:solarized_termcolors=16
+let g:solarized_termtrans=0
+let g:solarized_contrast="normal"
+let g:solarized_visibility="normal"
+color solarized
