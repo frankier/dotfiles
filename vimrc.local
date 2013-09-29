@@ -1,4 +1,4 @@
-set guifont=Inconsolata\-dz\ for\ Powerline\ 10
+set guifont=Inconsolata\-dz\ for\ Powerline\ 9
 if has('gui_running')
     set background=light
 else
@@ -13,5 +13,6 @@ let g:solarized_contrast="normal"
 let g:solarized_visibility="normal"
 color solarized
 
-set guioptions-=M
+set guioptions=-M
 set wrap
+set encoding=utf-8

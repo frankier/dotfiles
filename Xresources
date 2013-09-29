@@ -1,10 +1,11 @@
 xterm*saveLines: 10000
-xterm*ScrollBar: on
-xterm*rightScrollBar: true
-xterm*multiScroll: on
-xterm*jumpScroll: on
+!xterm*ScrollBar: on
+!xterm*rightScrollBar: true
+!xterm*multiScroll: on
+!xterm*jumpScroll: on
+xterm*faceName: "Inconsolata\-dz for Powerline:size=9:antialais=true:hinting=true"
 
-URxvt*font: xft:Inconsolata\-dz for Powerline:size=8:antialais=true:hinting=true, xft:Inconsolata\-dz for Powerline:size=8:antialais=true:hinting=true
+URxvt*font: xft:Inconsolata\-dz for Powerline:size=9:antialais=true:hinting=true,xft:Inconsolata\-dz for Powerline:size=9:antialais=true:hinting=true
 
 ! Solarized color scheme for the X Window System
 !
