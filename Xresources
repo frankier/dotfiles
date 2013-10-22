@@ -1,11 +1,21 @@
+! Xft settings ---------------------------------------------------------------
+
+Xft.dpi:        96
+Xft.antialias:  true
+Xft.rgba:       rgb
+Xft.hinting:    true
+Xft.hintstyle:  hintslight
+
+! xterm settings ---------------------------------------------------------------
+
 xterm*saveLines: 10000
 !xterm*ScrollBar: on
 !xterm*rightScrollBar: true
 !xterm*multiScroll: on
 !xterm*jumpScroll: on
-xterm*faceName: "Inconsolata\-dz for Powerline:size=9:antialais=true:hinting=true"
+xterm*faceName: "Inconsolata\-dz for Powerline:size=9:antialais=true:hinting=true,"
 
-URxvt*font: xft:Inconsolata\-dz for Powerline:size=9:antialais=true:hinting=true,xft:Inconsolata\-dz for Powerline:size=9:antialais=true:hinting=true
+!URxvt*font: xft:Inconsolata\-dz for Powerline:size=11:antialais=true:hinting=true
 
 ! Solarized color scheme for the X Window System
 !

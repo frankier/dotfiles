@@ -3,8 +3,8 @@ dropboxd &
 #transmission &
 #chromium &
 #xchat &
-xsetroot -bg black &
 xrdb ~/.Xresources
+xsetroot -bg black
 ssh-agent awesome
 #urxvt
 #xmonad

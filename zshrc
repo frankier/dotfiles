@@ -4,9 +4,9 @@ ZSH=$HOME/.oh-my-zsh
 
 #ZSH_THEME="agnoster"
 #ZSH_THEME="mortalscumbag"
-#ZSH_THEME="kennethreitz"
+ZSH_THEME="frankie"
 #ZSH_THEME="kardan"
-ZSH_THEME="ys"
+#ZSH_THEME="ys"
 
 # Uncomment following line if you want red dots to be displayed while waiting for completion
 # COMPLETION_WAITING_DOTS="true"
@@ -16,13 +16,12 @@ ZSH_THEME="ys"
 # much faster.
 # DISABLE_UNTRACKED_FILES_DIRTY="true"
 
-plugins=(git)
+plugins=(archlinux git git-flow github history-substring-search pip python sbt scala systemd vi-mode virtualenv virtualenvwrapper vundle) # autoenv 
 
 source $ZSH/oh-my-zsh.sh
 
 # --- ^ oh-my-zsh stuff ^ -- v normal zsh stuff v --- #
 
-bindkey -v # vi linediting
 setopt extendedglob
 
 # --- ^ normal zsh stuff ^ -- v environment stuff v --- #
@@ -38,8 +37,12 @@ path=($^path(N)) # Strip out $PATH dirs that don't exist
 export EDITOR=vim
 export BROWSER=chromium
 
-source /usr/bin/virtualenvwrapper_lazy.sh
-source /usr/bin/activate.sh # autoenv
+export WORKON_HOME=~/programming/python/envs/
+export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python2
+export VIRTUALENVWRAPPER_VIRTUALENV=/usr/bin/virtualenv2
+
+source /usr/bin/virtualenvwrapper.sh
+#source /usr/bin/activate.sh # autoenv
 
 alias showdot='dot -Tpdf \!:1 > /tmp/\!:1.pdf && xpdf /tmp/\!:1.pdf && rm -f /tmp/\!:1.pdf'
 alias quickweb='python -m SimpleHTTPServer 9001'

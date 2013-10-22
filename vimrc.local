@@ -16,3 +16,9 @@ color solarized
 set guioptions=-M
 set wrap
 set encoding=utf-8
+set nofoldenable
+
+UnBundle 'spf13/vim-autoclose'
+
+" C-X to swap visual with yanked.
+:vnoremap <C-X> <Esc>`.``gvP``P
