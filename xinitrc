@@ -5,6 +5,6 @@ dropboxd &
 #xchat &
 xrdb ~/.Xresources
 xsetroot -bg black
-ssh-agent awesome
+ssh-agent awesome ~/.config/awesome/rc.lua
 #urxvt
 #xmonad
