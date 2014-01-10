@@ -31,6 +31,9 @@ path+=$HOME/.local/bin
 #/sbin
 #/usr/local/bin
 path+=$HOME/.gem/ruby/1.9.1/bin
+#path+=$HOME/yasrc/llvm32build/bin
+path+=/home/grimboy/yasrc/build/Release+Asserts/bin
+path+=/home/grimboy/yasrc/emscripten
 
 path=($^path(N)) # Strip out $PATH dirs that don't exist
 
