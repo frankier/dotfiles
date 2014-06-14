@@ -1,18 +1,5 @@
 " Modeline and Notes {
 " vim: set sw=4 ts=4 sts=4 et tw=78 foldmarker={,} foldlevel=0 foldmethod=marker spell:
-"
-"                    __ _ _____              _
-"         ___ _ __  / _/ |___ /      __   __(_)_ __ ___
-"        / __| '_ \| |_| | |_ \ _____\ \ / /| | '_ ` _ \
-"        \__ \ |_) |  _| |___) |_____|\ V / | | | | | | |
-"        |___/ .__/|_| |_|____/        \_/  |_|_| |_| |_|
-"            |_|
-"
-"   This is the personal .vimrc.before file of Steve Francia.
-"   While much of it is beneficial for general use, I would
-"   recommend picking out the parts you want and understand.
-"
-"   You can find me at http://spf13.com
 " }
 
 " spf13 options {
@@ -39,17 +26,17 @@
     "   let g:spf13_no_neosnippet_expand = 1
 
     " Disable whitespace stripping
-    "   let g:spf13_keep_trailing_whitespace = 1
+        let g:spf13_keep_trailing_whitespace = 1
+        let g:pymode_trim_whitespaces = 0
 
     " Enable powerline symbols
         let g:airline_powerline_fonts = 1
 
-    " vim files directory
-    "   let g:spf13_consolidated_directory = <full path to desired directory>
-    "   eg: let g:spf13_consolidated_directory = $HOME . '/.vim/'
-    "
-    "
+        let g:spf13_noninvasive_completion = 1
         let g:spf13_bundle_groups=['general', 'neocomplete', 'programming', 'ruby', 'python', 'go', 'twig', 'javascript', 'haskell', 'html', 'misc', 'scala']
     " php
 
+        let g:pymode_rope_lookup_project = 0
+        let g:pymode_rope_complete_on_dot = 0
+        "let g:pymode_rope = 0
 " }

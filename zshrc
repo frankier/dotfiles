@@ -32,19 +32,18 @@ path+=$HOME/.local/bin
 #/usr/local/bin
 path+=$HOME/.gem/ruby/1.9.1/bin
 #path+=$HOME/yasrc/llvm32build/bin
-path+=/home/grimboy/yasrc/build/Release+Asserts/bin
-path+=/home/grimboy/yasrc/emscripten
+path+=/home/frankier/yasrc/build/Release+Asserts/bin
+path+=/home/frankier/yasrc/emscripten
 
 path=($^path(N)) # Strip out $PATH dirs that don't exist
 
 export EDITOR=vim
-export BROWSER=chromium
 
-export WORKON_HOME=~/programming/python/envs/
-export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python2
-export VIRTUALENVWRAPPER_VIRTUALENV=/usr/bin/virtualenv2
+#export WORKON_HOME=~/programming/python/envs/
+#export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python2
+#export VIRTUALENVWRAPPER_VIRTUALENV=/usr/bin/virtualenv2
 
-source /usr/bin/virtualenvwrapper.sh
+#source /usr/bin/virtualenvwrapper.sh
 #source /usr/bin/activate.sh # autoenv
 
 alias showdot='dot -Tpdf \!:1 > /tmp/\!:1.pdf && xpdf /tmp/\!:1.pdf && rm -f /tmp/\!:1.pdf'

@@ -1,4 +1,5 @@
 dropboxd &
+nm-applet &
 #skype &
 #transmission &
 #chromium &
