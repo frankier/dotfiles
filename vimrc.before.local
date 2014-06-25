@@ -33,7 +33,7 @@
         let g:airline_powerline_fonts = 1
 
         let g:spf13_noninvasive_completion = 1
-        let g:spf13_bundle_groups=['general', 'neocomplete', 'programming', 'ruby', 'python', 'go', 'twig', 'javascript', 'haskell', 'html', 'misc', 'scala']
+        let g:spf13_bundle_groups=['general', 'neocomplete', 'programming', 'ruby', 'python', 'twig', 'javascript', 'haskell', 'html', 'misc', 'scala']
     " php
 
         let g:pymode_rope_lookup_project = 0
