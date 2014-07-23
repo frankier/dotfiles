@@ -1,5 +1,5 @@
 ln -s `pwd`/vimrc.before.local ~/.vimrc.before.local
-ln -s `pwd`/vimrc.bundles ~/.vimrc.bundles
+ln -s `pwd`/vimrc.bundles.localy ~/.vimrc.bundles.local
 ln -s `pwd`/vimrc.local ~/.vimrc.local
 ln -s `pwd`/xinitrc ~/.xinitrc
 ln -s `pwd`/Xresources ~/.Xresources

@@ -19,7 +19,6 @@ set encoding=utf-8
 set nofoldenable
 let g:pymode_folding = 0
 
-UnBundle 'spf13/vim-autoclose'
 let g:gitgutter_realtime = 0
 let g:gitgutter_eager = 0
 
