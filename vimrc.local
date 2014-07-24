@@ -25,6 +25,8 @@ let g:gitgutter_eager = 0
 " C-X to swap visual with yanked.
 :vnoremap <C-X> <Esc>`.``gvP``P
 
+au BufNewFile,BufRead *.html set filetype=htmldjango
+
 autocmd Filetype html,htmldjango setlocal expandtab softtabstop=2 tabstop=2 shiftwidth=2
 autocmd FileType python setlocal expandtab softtabstop=4 tabstop=4 shiftwidth=4
 
@@ -60,3 +62,5 @@ function! Wipeout()
     execute 'tabnext' l:currentTab
   endtry
 endfunction
+
+set shell=bash " http://thejacklawson.com/2011/12/vim-cant-open-errofile/index.html

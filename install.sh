@@ -7,6 +7,7 @@ ln -s `pwd`/zshrc ~/.zshrc
 ln -s `pwd`/awesome ~/.config/awesome
 ln -s `pwd`/zsh/* ~/.oh-my-zsh/custom/
 ln -s `pwd`/gitignore ~/.gitignore
+ln -s `pwd`/gitconfig ~/.config
 
 mkdir -p ~/.fonts/
 ln -s `pwd`/fonts/* ~/.fonts/
