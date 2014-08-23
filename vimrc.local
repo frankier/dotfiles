@@ -27,7 +27,7 @@ let g:gitgutter_eager = 0
 
 au BufNewFile,BufRead *.html set filetype=htmldjango
 
-autocmd Filetype html,htmldjango setlocal expandtab softtabstop=2 tabstop=2 shiftwidth=2
+autocmd Filetype xml,html,htmldjango setlocal expandtab softtabstop=2 tabstop=2 shiftwidth=2
 autocmd FileType python setlocal expandtab softtabstop=4 tabstop=4 shiftwidth=4
 
 function! Wipeout()

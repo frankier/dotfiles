@@ -26,14 +26,17 @@ setopt extendedglob
 
 # --- ^ normal zsh stuff ^ -- v environment stuff v --- #
 
+export GOPATH=$HOME/code/go/
+
 path+=$HOME/bin
 path+=$HOME/.local/bin
 #/sbin
 #/usr/local/bin
 path+=$HOME/.gem/ruby/1.9.1/bin
+path+=$GOPATH/bin
 #path+=$HOME/yasrc/llvm32build/bin
-path+=/home/frankier/yasrc/build/Release+Asserts/bin
-path+=/home/frankier/yasrc/emscripten
+#path+=/home/frankier/yasrc/build/Release+Asserts/bin
+#path+=/home/frankier/yasrc/emscripten
 
 path=($^path(N)) # Strip out $PATH dirs that don't exist
 
@@ -48,3 +51,4 @@ export EDITOR=vim
 
 alias showdot='dot -Tpdf \!:1 > /tmp/\!:1.pdf && xpdf /tmp/\!:1.pdf && rm -f /tmp/\!:1.pdf'
 alias quickweb='python -m SimpleHTTPServer 9001'
+alias gogo='cd ~/code/go/src/frankie.robertson.name/'
