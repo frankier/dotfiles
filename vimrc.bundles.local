@@ -1,5 +1,8 @@
 UnBundle 'spf13/vim-autoclose'
 Bundle 'rking/ag.vim'
 Bundle 'karlbright/qfdo.vim'
-Bundle henrik/vim-qargs
-Bundle tjennings/git-grep-vim
+Bundle 'henrik/vim-qargs'
+Bundle 'tjennings/git-grep-vim'
+Bundle 'facebook/vim-flow.git'
+Bundle 'tpope/vim-unimpaired.git'
+Bundle 'tpope/vim-eunuch.git'

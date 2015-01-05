@@ -1,4 +1,4 @@
-set guifont=Inconsolata\-dz\ for\ Powerline\ 9
+set guifont=Inconsolata\-dz\ for\ Powerline\ 10
 if has('gui_running')
     set background=light
 else
@@ -64,3 +64,5 @@ function! Wipeout()
 endfunction
 
 set shell=bash " http://thejacklawson.com/2011/12/vim-cant-open-errofile/index.html
+
+command -nargs=1 Agg Ag <args> $PRJ
