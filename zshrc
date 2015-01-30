@@ -42,7 +42,7 @@ path+=/home/frankier/sources/flow/bin/
 
 path=($^path(N)) # Strip out $PATH dirs that don't exist
 
-export EDITOR=vim
+export EDITOR=nvim
 
 #export WORKON_HOME=~/programming/python/envs/
 #export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python2
