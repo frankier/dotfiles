@@ -31,4 +31,4 @@ gohome(listdir(fontsd)[0], fontsd)
 
 
 def setup_neovim():
-    pass
+    gohome("nvim", ".")
