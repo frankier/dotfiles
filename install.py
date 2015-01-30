@@ -21,10 +21,14 @@ for f in [
     "Xresources",
     "zshrc",
     "gitignore",
-    "gitconfig
+    "gitconfig"
 ]:
     gohome(f, ".")
 
 fontsd = "~/.fonts/"
 mkdir(fontsd)
 gohome(listdir(fontsd)[0], fontsd)
+
+
+def setup_neovim():
+    pass
