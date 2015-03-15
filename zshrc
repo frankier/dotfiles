@@ -35,6 +35,7 @@ path+=$HOME/.local/bin
 path+=$HOME/.gem/ruby/1.9.1/bin
 path+=$GOPATH/bin
 path+=/usr/local/mercury-14.01.1/bin
+path+=$HOME/.linuxbrew/bin
 #path+=$HOME/yasrc/llvm32build/bin
 #path+=/home/frankier/yasrc/build/Release+Asserts/bin
 #path+=/home/frankier/yasrc/emscripten
