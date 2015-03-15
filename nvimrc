@@ -1,29 +1,12 @@
 """ Vim config
-nnoremap <silent> <C-p> :CtrlP<CR>
-
-" General
-set mouse=a
-
-" Editing preferences
-set virtualedit=onemore     " Allow for cursor beyond last character
 
 " Presentation preferences
-set wrap                    " Wrap lines
 set nofoldenable            " Folds suck
 
-" Buffers/files
-set history=1000            " Store a ton of history (default is 20)
-set hidden                  " Allow buffer switching without saving
-set backup                  " Backups are nice ...
-set undofile                " So is persistent undo ...
-set undolevels=1000         " Maximum number of changes that can be undone
-set undoreload=10000        " Maximum number lines to save for undo on a buffer reload
-
 " Extra indicators
-set number                  " Line numbers on
 set showmatch               " Show matching brackets/parenthesis
-set incsearch               " Find as you type search
-set hlsearch                " Highlight search terms
+set list
+set listchars=tab:›\ ,trail:•,extends:#,nbsp:. " Highlight problematic whitespace
 
 """ Plugins config
 
@@ -51,10 +34,11 @@ autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
 let g:gitgutter_realtime = 0
 let g:gitgutter_eager = 0
 
-""" Extra commands
+" JSX
+let g:jsx_ext_required = 0
 
-" C-X to swap visual with yanked.
-:vnoremap <C-X> <Esc>`.``gvP``P
+" vim-json
+let g:vim_json_syntax_conceal = 0
 
 """ Bootstrap vim-plug
 
@@ -72,6 +56,7 @@ Plug 'junegunn/vim-plug'
 
 " Core 'text editor' settings and shortcuts
 Plug 'tpope/vim-sensible'
+Plug 'frankier/vim-pretty-sensible'
 Plug 'tpope/vim-sleuth'
 Plug 'tpope/vim-unimpaired'
 Plug 'terryma/vim-multiple-cursors'
@@ -81,6 +66,8 @@ Plug 'mbbill/undotree'
 Plug 'vim-scripts/bufkill.vim'
 Plug 'bling/vim-bufferline'
 Plug 'kien/ctrlp.vim'
+Plug 'tpope/vim-eunuch'
+Plug 'rking/ag.vim'
 
 " Colorschemes
 Plug 'altercation/vim-colors-solarized'
@@ -88,9 +75,6 @@ Plug 'altercation/vim-colors-solarized'
 " Git
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
-
-" Search
-Plug 'rking/ag.vim'
 
 " Multiple language plugins
 Plug 'Valloric/YouCompleteMe'
@@ -103,8 +87,12 @@ Plug 'groenewege/vim-less'
 
 " Programming
 Plug 'pangloss/vim-javascript'
+Plug 'marijnh/tern_for_vim'
 Plug 'fatih/vim-go'
 Plug 'python-rope/ropevim'
 Plug 'mxw/vim-jsx'
+
+" Meta
+Plug 'tpope/vim-scriptease'
 
 call plug#end()
