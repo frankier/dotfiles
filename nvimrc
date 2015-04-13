@@ -95,4 +95,7 @@ Plug 'mxw/vim-jsx'
 " Meta
 Plug 'tpope/vim-scriptease'
 
+" Floobits
+Plug 'floobits/floobits-neovim'
+
 call plug#end()
