@@ -1,4 +1,6 @@
 #!/bin/sh
 
 #syndaemon -k -d -i 0.2
-dropbox start
+#dropbox start
+xmodmap ~/.xmodmap
+nm-applet
