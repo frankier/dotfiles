@@ -1,1 +1,1 @@
-/home/frankier/.local/bin/mise activate fish | source
+~/.local/bin/mise activate fish | source
