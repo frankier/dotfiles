@@ -267,19 +267,7 @@ layout {
 // Note that running niri as a session supports xdg-desktop-autostart,
 // which may be more convenient to use.
 // See the binds section below for more spawn examples.
-spawn-at-startup "mako"
-spawn-at-startup "kanshi"
-//spawn-at-startup "wlsunset" "-S" "6:30" "-s" "12:00" "-t" "3000" "-T" "6500" "-d" "0"
-//spawn-at-startup "/home/frankier/.config/waybar/setupred.sh"
-spawn-at-startup "swayosd-server"
-//spawn-at-startup "waybar"
-spawn-at-startup "xfce4-panel"
-spawn-at-startup "lxpolkit"
-spawn-at-startup "swayidle" "-w" \
-    "timeout" "1200" "swaylock -f" \
-    "timeout" "1201" "niri msg action power-off-monitors" \
-    "timeout" "1500" "systemctl suspend" \
-    "before-sleep" "swaylock -f"
+spawn-at-startup "xfce4-session"
 
 // uncomment this line to ask the clients to omit their client-side decorations if possible.
 // if the client will specifically ask for csd, the request will be honored.
