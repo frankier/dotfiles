@@ -267,7 +267,7 @@ layout {
 // Note that running niri as a session supports xdg-desktop-autostart,
 // which may be more convenient to use.
 // See the binds section below for more spawn examples.
-spawn-at-startup "xfce4-session"
+spawn-at-startup "mako"
 
 // uncomment this line to ask the clients to omit their client-side decorations if possible.
 // if the client will specifically ask for csd, the request will be honored.
