@@ -5,6 +5,7 @@
 -- Editor
 vim.opt.smoothscroll = false
 vim.o.conceallevel = 0
+vim.g.autoformat = false
 
 -- Keymaps
 vim.g.maplocalleader = ";"
