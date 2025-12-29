@@ -1,5 +1,6 @@
 return {
   "benomahony/uv.nvim",
+  auto_activate_venv = false,
   -- Optional filetype to lazy load when you open a python file
   -- ft = { python }
   -- Optional dependency, but recommended:
