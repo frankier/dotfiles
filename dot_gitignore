@@ -1,0 +1,7 @@
+*.pyc
+.ropeproject
+.tox
+.ackrc
+.agignore
+/attic/
+*.code-workspace
