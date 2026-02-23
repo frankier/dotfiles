@@ -3,7 +3,6 @@ if status is-interactive
     set -g fish_key_bindings fish_vi_key_bindings
     bind --mode insert ctrl-j down-or-search
     bind --mode insert ctrl-k up-or-search
-    alias fd fdfind
 end
 
 export JULIA_PKG_PRESERVE_TIERED_INSTALLED=1
