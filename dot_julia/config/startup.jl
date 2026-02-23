@@ -3,7 +3,7 @@ using TestEnv
 using Infiltrator
 
 if isinteractive()
-    @eval using VimBindings
+    #@eval using VimBindings
 
     function restart_repl()
         argv = Base.julia_cmd().exec
@@ -24,7 +24,7 @@ if isinteractive()
 end
 
 atreplinit() do repl
-    @eval using OhMyREPL
+    #@eval using OhMyREPL
     @eval using TestPicker
     @eval using RCall
 end
