@@ -1,5 +1,5 @@
 [user]
-    email = frankie@robertson.name
+    email = frankier@frankier.name
     name = Frankie Robertson
 [push]
     default = simple
@@ -15,12 +15,7 @@
 	graph = log --all --graph --decorate --oneline
 [core]
     excludesfile = ~/.gitignore
-[sendemail]
-    smtpEncryption = tls
-    smtpServer = smtp.gmail.com
-    smtpUser = frankie.robertson@gmail.com
-    smtpServerPort = 587
-	smtpPass = exudyqtutsnpetay
+	editor = vi
 [pull]
 	ff = only
 [init]
